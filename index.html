@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emergency SOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 Emergency SOS 🚨</h1>
+    <p>If you are in danger or need urgent help, press the button below:</p>
+    <button class="sos-button" onclick="handleSOS()">ACTIVATE SOS</button>
+  </div>
+
+  <!-- SOS Popup -->
+  <div id="sos-popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>🚨 SOS Activated!</h2>
+      <p>Help is on the way. Stay calm and stay safe.</p>
+    </div>
+  </div>
+
+  <script>
+    function handleSOS() {
+      document.getElementById('sos-popup').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
